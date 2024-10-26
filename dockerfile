@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the JAR file from your local machine to the working directory in the container
-COPY target/*.jar /app/herokutest.jar
+COPY target/herokutest-0.0.1-SNAPSHOT.jar /app/herokutest.jar
 
 # Expose the application port (adjust if needed)
 EXPOSE 8080
